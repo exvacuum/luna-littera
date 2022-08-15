@@ -14,7 +14,6 @@ fn main() {
     let now = Utc::now();
 
     let duration = now - start;
-    println!("{}", duration.num_seconds());
     let duration = duration.num_seconds() % FIXED_LUNAR_CYCLE;
     let cycle_factor = duration as f64/FIXED_LUNAR_CYCLE as f64;
     let cycle_char = (cycle_factor * CYCLE_CHARS.len() as f64) as usize;
