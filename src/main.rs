@@ -17,5 +17,5 @@ fn main() {
     let duration = duration.num_seconds() % FIXED_LUNAR_CYCLE;
     let cycle_factor = duration as f64/FIXED_LUNAR_CYCLE as f64;
     let cycle_char = (cycle_factor * CYCLE_CHARS.len() as f64) as usize;
-    print!("{}", CYCLE_CHARS[cycle_char]);
+    println!("{}", CYCLE_CHARS[cycle_char]);
 }
